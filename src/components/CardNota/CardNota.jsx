@@ -4,15 +4,19 @@ import './estilo.css'
 
 export default class CardNota extends Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return(
             <section className="card-nota"> 
                 <header>
                     <h3>
-                        Título
+                        {this.props.titulo}
                     </h3>
                     <p>
-                        Escreva sua nota
+                        {this.props.texto}
                     </p>
                 </header>
             </section>

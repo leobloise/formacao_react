@@ -3,6 +3,8 @@
     align-items: start;
     align-content: flex-start;
     flex-wrap: wrap;
+    border-left: .2rem solid rgb(243, 241, 241);
+    padding-left: 2rem;
 }
 
 .lista-notas_item {
@@ -13,4 +15,5 @@
     margin: 1rem;
     background-color: lightgray;
     border-radius: 1rem;
+    padding: 1rem;
 }
