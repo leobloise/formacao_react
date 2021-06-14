@@ -1,0 +1,38 @@
+.formulario-cadastro {
+    grid-area: input;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.formulario-cadastro input, .formulario-cadastro button {
+    display: block;
+    margin: .5rem 0;
+    border: none;
+    outline: none;
+}
+
+.formulario-cadastro input[type="text"], .formulario-cadastro textarea {
+    background-color: lightgray;
+    text-indent: .5rem;
+    font-family: inherit;
+    padding: .5rem 0;
+}
+
+.formulario-cadastro textarea {
+    height: 5rem;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+.formulario-cadastro button {
+    align-self: flex-end;
+    width: 10rem;
+    background-color: #1f3f64;
+    font-family: inherit;
+    font-size: 1rem;
+    color: white;
+    padding: .5rem;
+    cursor: pointer;
+}

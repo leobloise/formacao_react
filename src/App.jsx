@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import ListaDeNotas from "./components/ListaDeNotas";
-import FormularioCadastro from "./components/FormularioCadastro";
+import ListaDeNotas from "./components/ListaDeNotas/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro/FormularioCadastro";
 
 
 class App extends Component {
   
   render() {
     return (
-      <section>
+      <section id="application">
         <FormularioCadastro></FormularioCadastro>
         <ListaDeNotas></ListaDeNotas>
       </section>
