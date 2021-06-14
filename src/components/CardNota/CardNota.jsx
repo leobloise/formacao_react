@@ -6,7 +6,7 @@ export default class CardNota extends Component {
 
     render() {
         return(
-            <section className="card-nota "> 
+            <section className="card-nota"> 
                 <header>
                     <h3>
                         Título

@@ -1,3 +1,9 @@
 .card-nota {
-    color: red;
+    text-indent: 2rem;
+    border-radius: 1rem;
+}
+
+.card-nota header h3 {
+    font-weight: bold;
+    margin: 0 0 .5rem 0;
 }

@@ -1,7 +1,16 @@
 .lista-notas {
-
+    display: flex;
+    align-items: start;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .lista-notas_item {
-
+    height: 10%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    background-color: lightgray;
+    border-radius: 1rem;
 }
