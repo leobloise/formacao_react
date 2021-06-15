@@ -69,3 +69,11 @@ body, #root {
   height: 100%;
 }
 
+.conteudo-principal {
+	grid-area: output;
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+	border-left: 2px solid lightgray;
+}
+

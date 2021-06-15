@@ -3,17 +3,15 @@
     align-items: start;
     align-content: flex-start;
     flex-wrap: wrap;
-    border-left: .2rem solid rgb(243, 241, 241);
-    padding-left: 2rem;
+    margin-top: 2rem;
 }
 
 .lista-notas_item {
-    height: 10%;
     width: 20%;
+    background-color: lightgray;
+    margin: 1rem;
+    height: 6rem; 
     display: flex;
     align-items: center;
-    margin: 1rem;
-    background-color: lightgray;
     border-radius: 1rem;
-    padding: 1rem;
-}
+} 

@@ -1,0 +1,28 @@
+.lista-categorias, .lista-categorias ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista-categorias {
+    margin-top: 1rem;
+}
+
+.lista-categorias ul {
+    width: 66%;
+}
+
+.lista-categorias ul li {
+    background-color: #154d4d;
+    padding: .5rem;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.lista-categorias input {
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    text-indent: .2rem;
+    border-radius: .4rem;
+}
