@@ -16,12 +16,13 @@ export default class ArrayDeNotas {
     adicionarNota(titulo, texto, categoria) {
 
         const nota = new Nota(titulo, texto, categoria)
-
         this.notas.push(nota)
+        this.notificar(this.notas)
     }
 
     apagarNotas(indice) {
         this.notas.splice(indice, 1);
+        this.notificar(this.notas)
     }
 
 }
