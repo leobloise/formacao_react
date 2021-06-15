@@ -5,14 +5,14 @@
     padding: 1rem;
 }
 
-.formulario-cadastro input, .formulario-cadastro button {
+.formulario-cadastro input, .formulario-cadastro button, .formulario-cadastro select {
     display: block;
     margin: .5rem 0;
     border: none;
     outline: none;
 }
 
-.formulario-cadastro input[type="text"], .formulario-cadastro textarea {
+.formulario-cadastro input[type="text"], .formulario-cadastro textarea , .formulario-cadastro select{
     background-color: lightgray;
     text-indent: .5rem;
     font-family: inherit;

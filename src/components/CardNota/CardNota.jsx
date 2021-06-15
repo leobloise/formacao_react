@@ -20,6 +20,8 @@ export default class CardNota extends Component {
                     <p>
                         {this.props.texto}
                     </p>
+
+                <h4> {this.props.categoria} </h4>
                 
             </section>
         );

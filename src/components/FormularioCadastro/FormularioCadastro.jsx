@@ -7,6 +7,7 @@ class FormularioCadastro extends Component {
         super(props)
         this.titulo = "";
         this.texto = "";
+        this.categoria = "";
     }
 
     extractValueFromEvent(event) {
@@ -24,15 +25,21 @@ class FormularioCadastro extends Component {
         console.log(this.texto)
     }
 
+    handleMudancaSelect(event) {
+        event.stopPropagation();
+        this.categoria = event.target[event.target.selectedIndex].text
+        console.log(this.categoria);
+    }
+
     _criarNota(event) {
         event.preventDefault();
-        this.props.criarNota(this.titulo, this.texto)
+        this.props.criarNota(this.titulo, this.texto, this.categoria);
     }
 
     render() {
         return (
             <form className="formulario-cadastro" onSubmit={this._criarNota.bind(this)}>
-                <select className="formulario-cadastro__input">
+                <select onChange={this.handleMudancaSelect.bind(this)}>
                     {this.props.categorias.map((categoria, index) => {
                         return(
                             <option key={index}> {categoria} </option>

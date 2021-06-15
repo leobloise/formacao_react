@@ -7,3 +7,11 @@
     font-weight: bold;
     margin: 0 0 .5rem 0;
 }
+
+
+
+.card-nota h4 {
+    padding: .2rem;
+    font-weight: lighter;
+    font-size: .8rem;
+}

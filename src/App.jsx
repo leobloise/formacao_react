@@ -14,10 +14,11 @@ class App extends Component {
     }
   }
 
-  criarNota(titulo, texto) {
+  criarNota(titulo, texto, categoria) {
     const novaNota = {
       titulo: titulo,
-      texto: texto
+      texto: texto,
+      categoria: categoria
     }
     const novoEstado = {notas: [...this.state.notas, novaNota]}
     this.setState(novoEstado)
