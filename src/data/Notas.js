@@ -2,6 +2,15 @@ export default class ArrayDeNotas {
 
     constructor() {
         this.notas = [];
+        this.inscritos = [];
+    }
+
+    inscrever(func) {
+        this.inscritos.push(func)
+    }
+
+    notificar() {
+        this.inscritos.forEach(func => func(this.notas))
     }
 
     adicionarNota(titulo, texto, categoria) {
