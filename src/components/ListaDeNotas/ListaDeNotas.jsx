@@ -7,10 +7,15 @@ class ListaDeNotas extends Component {
     constructor(props) {
         super(props)
         this.state = {notas: []}
+        this.inserirNotas = this.inserirNotas.bind(this)
     }
 
     componentDidMount() {
-        this.props.notas.inscrever(this.inserirNotas.bind(this))
+        this.props.notas.inscrever(this.inserirNotas)
+    }
+
+    componentWillUnmount() {
+        this.props.notas.desinscrever(this.inserirNotas);
     }
 
     inserirNotas(notas) {

@@ -9,6 +9,12 @@ export default class Categorias {
         this._inscritos.push(func);
     }
 
+    desinscrever(func) {
+        this._inscritos = this._inscritos.filter(
+            oldFunc => func !== oldFunc
+        )
+    }
+
     notificar() {
         this._inscritos.forEach(func => {
             func(this.categorias);

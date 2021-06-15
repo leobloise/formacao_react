@@ -9,6 +9,12 @@ export default class ArrayDeNotas {
         this.inscritos.push(func)
     }
 
+    desinscrever(func) {
+        this.inscritos = this.inscritos.filter(
+            oldFunc => func !== oldFunc
+        )
+    }
+
     notificar() {
         this.inscritos.forEach(func => func(this.notas))
     }
