@@ -40,7 +40,7 @@ class FormularioCadastro extends Component {
         return (
             <form className="formulario-cadastro" onSubmit={this._criarNota.bind(this)}>
                 <select onChange={this.handleMudancaSelect.bind(this)}>
-                    <option selected='true'>Sem categoria</option>
+                    <option defaultValue={true}>Sem categoria</option>
                     {this.props.categorias.map((categoria, index) => {
                         return(
                             <option key={index}> {categoria} </option>
