@@ -4,10 +4,6 @@ import { ReactComponent as DeleteSVG} from'../../assets/delete.svg'
 
 export default class CardNota extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     apagar() {
         this.props.apagarNota(this.props.indice)
     }
